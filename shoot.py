@@ -1,5 +1,5 @@
 
-
+import pgzrun
 from random import randint
 
 apple = Actor("apple")
@@ -20,6 +20,8 @@ def on_mouse_down(pos):
         
         print("Good Shooting!")
         place_apple()
+        score = 0
+        print(score + 1)
 
     else:
 
@@ -29,4 +31,7 @@ def on_mouse_down(pos):
 
 
 place_apple()
+pgzrun.go()
+
+
  
